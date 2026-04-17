@@ -1,0 +1,6 @@
+{
+  "name": "Decor Shop Manager",
+  "description": "A minimalist and modern management system for a decor shop, featuring dashboard analytics, product CRUD, order tracking, and a shopping cart.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

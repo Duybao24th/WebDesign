@@ -1,0 +1,15 @@
+{
+  "name": "long-an-decor",
+  "version": "1.0.0",
+  "description": "Hệ thống quản lý cửa hàng Long An Decor",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.3"
+  }
+}
