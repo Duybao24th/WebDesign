@@ -24,12 +24,12 @@
         <div id="sidebar-overlay" class="fixed inset-0 bg-black/20 backdrop-blur-sm z-[55] hidden"></div>
 
         <!-- Header (Always visible) -->
-        <header class="fixed top-0 left-0 right-0 h-16 bg-[#E0F2FE]/80 backdrop-blur-md border-b border-[#BAE6FD] flex items-center justify-between px-6 z-50">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-[#0EA5E9] rounded-lg flex items-center justify-center text-white">
+        <header class="sticky top-0 h-16 bg-[#E0F2FE]/80 backdrop-blur-md border-b border-[#BAE6FD] flex items-center justify-between px-6 z-50">
+            <div class="flex items-center gap-2 overflow-hidden">
+                <div class="w-8 h-8 bg-[#0EA5E9] rounded-lg flex items-center justify-center text-white shrink-0">
                     <i data-lucide="leaf" class="w-5 h-5"></i>
                 </div>
-                <span class="font-serif font-bold text-lg text-[#0EA5E9]">Long An Decor</span>
+                <span class="font-serif font-bold text-base sm:text-lg text-[#0EA5E9] truncate">Long An Decor</span>
             </div>
             <button id="mobile-menu-btn" onclick="toggleSidebar()" class="p-2 text-[#64748B] hover:bg-white/50 rounded-lg transition-colors">
                 <i data-lucide="menu" class="w-6 h-6"></i>
@@ -37,7 +37,7 @@
         </header>
 
         <!-- Main Content -->
-        <main class="flex-1 p-6 lg:p-10 pt-20 pb-24 lg:pb-10 overflow-y-auto">
+        <main class="flex-1 p-6 lg:p-10 pb-24 lg:pb-10 overflow-y-auto">
             <div id="content" class="max-w-7xl mx-auto">
                 <!-- Content will be injected here -->
             </div>

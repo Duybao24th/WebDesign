@@ -4,7 +4,8 @@
   "description": "Hệ thống quản lý cửa hàng Long An Decor",
   "main": "index.html",
   "scripts": {
-    "start": "npx serve ."
+    "start": "npx serve .",
+    "build": "mkdir -p dist && cp index.html style.css script.js firebase-applet-config.json firebase-blueprint.json README.md .gitignore package.json dist/ 2>/dev/null || true"
   },
   "keywords": [],
   "author": "",

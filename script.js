@@ -175,30 +175,30 @@ function renderAuth() {
                     </div>
                     <div class="space-y-1.5">
                         <label class="text-[9px] font-bold text-[#64748B] uppercase tracking-widest ml-1">Họ và tên</label>
-                        <input required type="text" id="reg-name" placeholder="Nguyễn Văn A" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.regData.name}">
+                        <input required type="text" id="reg-name" oninput="updateRegData('name', this.value)" placeholder="Nguyễn Văn A" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.regData.name}">
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <div class="space-y-1.5">
                             <label class="text-[9px] font-bold text-[#64748B] uppercase tracking-widest ml-1">Email</label>
-                            <input required type="email" id="reg-email" placeholder="email@example.com" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.regData.email}">
+                            <input required type="email" id="reg-email" oninput="updateRegData('email', this.value)" placeholder="email@example.com" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.regData.email}">
                         </div>
                         <div class="space-y-1.5">
                             <label class="text-[9px] font-bold text-[#64748B] uppercase tracking-widest ml-1">Số điện thoại</label>
-                            <input required type="tel" id="reg-phone" placeholder="090..." class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.regData.phone}">
+                            <input required type="tel" id="reg-phone" oninput="updateRegData('phone', this.value)" placeholder="090..." class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.regData.phone}">
                         </div>
                     </div>
                     <div class="space-y-1.5">
                         <label class="text-[9px] font-bold text-[#64748B] uppercase tracking-widest ml-1">Địa chỉ</label>
-                        <input required type="text" id="reg-address" placeholder="Số nhà, tên đường..." class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.regData.address}">
+                        <input required type="text" id="reg-address" oninput="updateRegData('address', this.value)" placeholder="Số nhà, tên đường..." class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.regData.address}">
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <div class="space-y-1.5">
                             <label class="text-[9px] font-bold text-[#64748B] uppercase tracking-widest ml-1">Mật khẩu</label>
-                            <input required type="password" id="reg-password" placeholder="••••••••" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs">
+                            <input required type="password" id="reg-password" oninput="updateRegData('password', this.value)" placeholder="••••••••" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.regData.password}">
                         </div>
                         <div class="space-y-1.5">
                             <label class="text-[9px] font-bold text-[#64748B] uppercase tracking-widest ml-1">Xác nhận</label>
-                            <input required type="password" id="reg-confirm" placeholder="••••••••" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs">
+                            <input required type="password" id="reg-confirm" oninput="updateRegData('confirmPassword', this.value)" placeholder="••••••••" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.regData.confirmPassword}">
                         </div>
                     </div>
                     <button type="submit" class="w-full py-3.5 bg-[#0EA5E9] text-white rounded-xl font-bold hover:opacity-90 transition-all shadow-lg shadow-[#0EA5E9]/20 mt-3 text-xs uppercase tracking-widest">Đăng ký ngay</button>
@@ -208,11 +208,11 @@ function renderAuth() {
                 <form onsubmit="handleLogin(event)" class="w-full max-w-md bg-white p-6 rounded-[24px] border border-[#BAE6FD] shadow-xl space-y-3">
                     <div class="space-y-1.5">
                         <label class="text-[9px] font-bold text-[#64748B] uppercase tracking-widest ml-1">Email</label>
-                        <input required type="email" id="login-email" placeholder="email@example.com" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.loginData.email}">
+                        <input required type="email" id="login-email" oninput="updateLoginData('email', this.value)" placeholder="email@example.com" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.loginData.email}">
                     </div>
                     <div class="space-y-1.5">
                         <label class="text-[9px] font-bold text-[#64748B] uppercase tracking-widest ml-1">Mật khẩu</label>
-                        <input required type="password" id="login-password" placeholder="••••••••" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs">
+                        <input required type="password" id="login-password" oninput="updateLoginData('password', this.value)" placeholder="••••••••" class="w-full px-3.5 py-2.5 bg-[#F0F9FF] border border-[#BAE6FD] rounded-xl text-xs" value="${state.loginData.password}">
                     </div>
                     ${state.loginError ? `<p class="text-red-500 text-[10px] font-bold text-center animate-bounce">${state.loginError}</p>` : ''}
                     <button type="submit" class="w-full py-3.5 bg-[#0EA5E9] text-white rounded-xl font-bold hover:opacity-90 transition-all shadow-lg shadow-[#0EA5E9]/20 mt-3 text-xs uppercase tracking-widest">Đăng nhập</button>
@@ -618,6 +618,14 @@ function renderCart() {
 }
 
 // --- Action Handlers ---
+window.updateRegData = (field, value) => {
+    state.regData[field] = value;
+};
+
+window.updateLoginData = (field, value) => {
+    state.loginData[field] = value;
+};
+
 window.setActiveTab = (tab) => {
     state.activeTab = tab;
     const sidebar = document.getElementById('sidebar');
@@ -639,36 +647,31 @@ window.setIsRegistering = (val) => {
 
 window.handleLogin = (e) => {
     e.preventDefault();
-    const email = document.getElementById('login-email').value;
-    const password = document.getElementById('login-password').value;
+    const { email, password } = state.loginData;
     
-    const found = state.registeredUsers.find(u => u.email === email && u.password === password);
+    const found = state.registeredUsers.find(u => u.email.toLowerCase() === email.toLowerCase() && u.password === password);
     if (found) {
         state.user = found;
         state.loginError = '';
         state.activeTab = 'dashboard';
+        state.loginData = { email: '', password: '' }; // Reset
         saveState();
         render();
     } else {
-        state.loginError = 'Sai tài khoản và mật khẩu';
+        state.loginError = 'Sai tài khoản hoặc mật khẩu';
         render();
     }
 };
 
 window.handleRegister = (e) => {
     e.preventDefault();
-    const name = document.getElementById('reg-name').value;
-    const email = document.getElementById('reg-email').value;
-    const phone = document.getElementById('reg-phone').value;
-    const address = document.getElementById('reg-address').value;
-    const password = document.getElementById('reg-password').value;
-    const confirm = document.getElementById('reg-confirm').value;
+    const { name, email, phone, address, password, confirmPassword } = state.regData;
 
-    if (password !== confirm) {
+    if (password !== confirmPassword) {
         alert('Mật khẩu xác nhận không khớp!');
         return;
     }
-    if (state.registeredUsers.some(u => u.email === email)) {
+    if (state.registeredUsers.some(u => u.email.toLowerCase() === email.toLowerCase())) {
         alert('Email này đã được đăng ký!');
         return;
     }
@@ -682,6 +685,7 @@ window.handleRegister = (e) => {
     state.registeredUsers.push(newUser);
     state.user = newUser;
     state.isRegistering = false;
+    state.regData = { name: '', email: '', phone: '', address: '', password: '', confirmPassword: '' }; // Reset
     saveState();
     alert(`Đăng ký tài khoản ${state.registerRole === 'admin' ? 'Admin' : 'Người dùng'} thành công!`);
     render();
