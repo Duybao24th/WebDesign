@@ -6,15 +6,15 @@
 const CATEGORIES = ['Đèn', 'Tranh', 'Cây giả', 'Decor bàn', 'Khác'];
 
 const INITIAL_PRODUCTS = [
-    { id: 'P001', name: 'Đèn bàn Gốm Thủ Công', category: 'Đèn', price: 1250000, stock: 15, imageUrl: 'https://flexhouse.vn/den-de-ban-bang-gom-thu-cong-moc-mac-kls1129/?srsltid=AfmBOordlLzXY4Za2xkbyE3AlXGXC-6CoE2S134z79ed6Kd4iA3X_0iu', createdAt: new Date().toISOString() },
-    { id: 'P002', name: 'Đèn để bàn phòng khách', category: 'Đèn', price: 1500000, stock: 8, imageUrl: 'https://decopro.vn/trang-tri-phong-khach/den-de-ban-cap-huou/?srsltid=AfmBOopNkcaifbKN-A3erx-7JLPV2zRXuPK165lOr7IHLWstMuDOVPwy', createdAt: new Date().toISOString() },
-    { id: 'P003', name: 'Tranh Canvas Trừu Tượng', category: 'Tranh', price: 850000, stock: 12, imageUrl: 'https://canvashouse.vn/san-pham/tranh-canvas-truu-tuong-anh-kim-cv2848/', createdAt: new Date().toISOString() },
-    { id: 'P004', name: 'Tranh Phong Cảnh', category: 'Tranh', price: 5500000, stock: 20, imageUrl: 'https://thanhnien.vn/chang-trai-ve-nhung-buc-tranh-ve-phong-canh-yen-binh-y-nhu-that-185250228153657883.htm', createdAt: new Date().toISOString() },
-    { id: 'P005', name: 'Cây Bàng Singapore Giả', category: 'Cây giả', price: 450000, stock: 20, imageUrl: 'https://caycanh4mua.com/chi-tiet/cay-bang-singapore-gia-cho-khong-gian-van-phong', createdAt: new Date().toISOString() },
-    { id: 'P006', name: 'Cây Giả Decor', category: 'Cây Giả', price: 320000, stock: 25, imageUrl: 'https://atzdecor.vn/cay-gia-de-ban-lam-viec-da-nang-gia-tot-decor-dep/?srsltid=AfmBOopaOekHZKKDZyGg7BB3ey5bkps5NK9lumWBckJ6Ora0L8rwxSiy', createdAt: new Date().toISOString() },
-    { id: 'P007', name: 'Tượng Gốm Decor Tối Giản', category: 'Decor bàn', price: 320000, stock: 25, imageUrl: 'https://www.noithatpassion.com/products/tuong-decor-hinh-xoan-bang-gom-phong-cach-toi-gian?srsltid=AfmBOooU9GeqVZ3YgKEJ9dpjSueGBGgXpQibHbJo5_f8yjbIAcJAWHG0', createdAt: new Date().toISOString() },
-    { id: 'P008', name: 'Cờ Để Bàn Decor', category: 'Decor bàn', price: 980000, stock: 10, imageUrl: 'https://cuahangco.com/san-pham/co-de-ban-lam-viec-de-inox-loai-cao-cap/?srsltid=AfmBOooxgqCzWmKZ_qckXmw7aR_JG5o2EaeucqtNjFcIGPJi8vQZbgPq', createdAt: new Date().toISOString() },
-    { id: 'P009', name: 'Quả Cầu Tuyết Decor', category: 'Decor bàn', price: 550000, stock: 18, imageUrl: 'https://shopquatructuyen.com/san-pham/qua-cau-tuyet-noel-2/', createdAt: new Date().toISOString() },
+    { id: 'P001', name: 'Đèn bàn Gốm Thủ Công', category: 'Đèn', price: 1250000, stock: 15, imageUrl: 'https://vn-fpt.azcloudstorage.com/den379.com/4-den-ban-2.jpg', createdAt: new Date().toISOString() },
+    { id: 'P002', name: 'Đèn để bàn phòng khách', category: 'Đèn', price: 1500000, stock: 8, imageUrl: 'https://sundecor.vn/wp-content/uploads/2025/01/den-ban-phong-ngu-led-cao-cap-gp048db-d-1.jpg', createdAt: new Date().toISOString() },
+    { id: 'P003', name: 'Tranh Canvas Trừu Tượng', category: 'Tranh', price: 850000, stock: 12, imageUrl: 'https://brocanvas.vn/wp-content/uploads/2024/05/Tranh-Canvas-Truu-Tuong-Mau-Acrylic-Song-Bien-Treo-Tuong-Trang-Tri-Decor-Khach-San-Nha-Hang-BRO6806.jpg', createdAt: new Date().toISOString() },
+    { id: 'P004', name: 'Tranh Phong Cảnh', category: 'Tranh', price: 5500000, stock: 20, imageUrl: 'https://buulong.com.vn/wp-content/uploads/2026/03/nhung-buc-tranh-phong-canh-dep-3.jpg', createdAt: new Date().toISOString() },
+    { id: 'P005', name: 'Cây Bàng Singapore Giả', category: 'Cây giả', price: 450000, stock: 20, imageUrl: 'https://caycanhxanh.vn/wp-content/uploads/2023/06/cay-bang-singapore-gia.jpg', createdAt: new Date().toISOString() },
+    { id: 'P006', name: 'Cây Giả Decor', category: 'Cây Giả', price: 320000, stock: 25, imageUrl: 'https://tamnguyenshop.com/Upload/HOA_GIA/chau-cay-gia-14-nhanh-chau-thung-cao-35cm-2.jpg', createdAt: new Date().toISOString() },
+    { id: 'P007', name: 'Tượng Gốm Decor Tối Giản', category: 'Decor bàn', price: 320000, stock: 25, imageUrl: 'https://tamnguyenshop.com/Upload/Home-decor/tuong-vit-gom-trang-tri%20(3).JPG', createdAt: new Date().toISOString() },
+    { id: 'P008', name: 'Cờ Để Bàn Decor', category: 'Decor bàn', price: 980000, stock: 10, imageUrl: 'https://product.hstatic.net/1000163445/product/cot-co-ha-noi__9_-photoroom_aa663d649c0b441190dfbcd4ea02fe9d_small.jpg', createdAt: new Date().toISOString() },
+    { id: 'P009', name: 'Quả Cầu Tuyết Decor', category: 'Decor bàn', price: 550000, stock: 18, imageUrl: 'https://fullhousehomedecor.vn/wp-content/uploads/2022/11/z3866337465759_725dbf5c5a25d769b7634505d50beb91.jpg', createdAt: new Date().toISOString() },
 ];
 
 // --- State Management ---
